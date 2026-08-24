@@ -1,0 +1,9 @@
+﻿services:
+  - type: web
+    name: zerost-landing
+    runtime: docker
+    plan: free
+    region: ohio
+    branch: main
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /

@@ -1,0 +1,32 @@
+@code {
+    private readonly StepItem[] _steps =
+    [
+        new("Check", "See if you qualify in minutes with a guided intake.", "✓"),
+        new("Structure", "Build a smart strategy using gifts, credits, concessions, and optimizers.", "◎"),
+        new("Close", "Move toward little-to-zero out-of-pocket with a cleaner path to closing.", "$")
+    ];
+
+    private sealed record StepItem(string Title, string Description, string Icon);
+}
+
+<section id="how" class="section-block section-light">
+    <div class="landing-container">
+        <div class="section-heading centered">
+            <div class="section-kicker">How it works</div>
+            <h2>See how to buy with lower cash friction</h2>
+        </div>
+
+        <div class="steps-grid">
+            @for (var index = 0; index < _steps.Length; index++)
+            {
+                var step = _steps[index];
+                <article class="step-card">
+                    <div class="step-icon">@step.Icon</div>
+                    <div class="step-order">Step @(index + 1)</div>
+                    <h3>@step.Title</h3>
+                    <p>@step.Description</p>
+                </article>
+            }
+        </div>
+    </div>
+</section>

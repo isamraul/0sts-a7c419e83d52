@@ -1,0 +1,11 @@
+@inherits LayoutComponentBase
+@using ZerostLanding.Theme
+
+<MudThemeProvider Theme="@ZerostTheme.Instance" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudPopoverProvider />
+
+<div class="page-shell">
+    @Body
+</div>

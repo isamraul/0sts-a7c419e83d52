@@ -1,0 +1,83 @@
+@code {
+    private readonly string[] _features =
+    [
+        "Instant Prequalification",
+        "Personalized Options",
+        "Cash Assistance Planning",
+        "Closing Cost Optimization"
+    ];
+}
+
+<section class="hero-section">
+    <div class="hero-backdrop"></div>
+    <div class="landing-container hero-grid">
+        <div class="hero-copy-panel">
+            <div class="eyebrow-pill">Structured homebuying, not guesswork</div>
+            <h1 class="hero-title">
+                Buying a home is not about how much money you have.
+                <span>It is about how well the deal is structured.</span>
+            </h1>
+            <p class="hero-description">
+                Zer0sts helps buyers organize prequalification, cash assistance, concessions,
+                and cost optimization into one guided system designed to reduce friction and
+                maximize savings.
+            </p>
+
+            <div class="hero-actions">
+                <MudButton Variant="Variant.Filled" Class="cta cta-primary">Analyze My Scenario</MudButton>
+                <MudButton Variant="Variant.Outlined" Class="cta cta-secondary">See How It Works</MudButton>
+            </div>
+
+            <div class="feature-grid">
+                @foreach (var feature in _features)
+                {
+                    <div class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <span>@feature</span>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="hero-card-shell">
+            <div class="hero-card-frame">
+                <div class="hero-card-core">
+                    <div class="hero-card-head">
+                        <div>
+                            <div class="mini-eyebrow">AI Structuring Box</div>
+                            <div class="card-title">Tell Zer0sts what you need</div>
+                        </div>
+                        <div class="mode-chip">Voice • Text • Image</div>
+                    </div>
+
+                    <div class="prompt-box">
+                        Example: “I have limited cash, fair credit, and want to buy in 6 months.”
+                    </div>
+
+                    <div class="mode-grid">
+                        <button class="mode-button mode-button-active">Voice</button>
+                        <button class="mode-button">Text</button>
+                        <button class="mode-button">Upload</button>
+                    </div>
+
+                    <MudButton Variant="Variant.Filled" Class="cta cta-ai">See How Zer0sts Can Help Today</MudButton>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Estimated Savings Paths</div>
+                        <div class="metric-value">6</div>
+                    </div>
+                    <div class="metric-card metric-card-highlight">
+                        <div class="metric-label">Buyer Out-of-Pocket Goal</div>
+                        <div class="metric-value">$0–Low</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Scenario Speed</div>
+                        <div class="metric-value">2 min</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

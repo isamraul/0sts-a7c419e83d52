@@ -1,0 +1,15 @@
+﻿bin/
+obj/
+.vs/
+.git/
+_deploy_logs/
+publish/
+*.user
+*.suo
+*.pdb
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+*.pfx
+*.pem
+*.key

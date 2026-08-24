@@ -1,0 +1,15 @@
+﻿.vs/
+bin/
+obj/
+publish/
+_deploy_logs/
+*.user
+*.suo
+*.pdb
+Properties/launchSettings.json
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+*.pfx
+*.pem
+*.key
