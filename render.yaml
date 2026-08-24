@@ -1,6 +1,6 @@
 ﻿services:
   - type: web
-    name: zerost-landing
+    name: 0sts-a7c419e83d52
     runtime: docker
     plan: free
     region: ohio
